@@ -1,22 +1,28 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.today,
+.yesterday {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.today {
+  background: black;
+}
+
+.today .text {
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.yesterday {
+  background: white;
+}
+
+.yesterday .text {
+  color: black;
+}
+
+.text {
+  mix-blend-mode: difference;
+  margin: auto;
+  font-size: 7vw;
 }
