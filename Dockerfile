@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN yarn run build
 
-FROM node
+FROM mhart/alpine-node
 EXPOSE 80
 RUN yarn global add serve
 WORKDIR /app
